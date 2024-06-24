@@ -347,26 +347,56 @@ body {
 
 }
 
-.discount {
+.price-fix-div {
+    display: flex;
+    align-items: center;
     position: fixed;
     bottom: 0;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+    padding: 0rem 8rem;
+    height: 8%;
     width: 100%;
     display: flex;
     cursor: pointer;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    justify-content: space-between;
 
-        & .discount-div {
-            width: 9%;
-            display: flex;
-            align-items: center;
-            gap: 1.4rem;
-            color: white;
-            padding: .8rem .8rem;
-            background-color: #007fad;
+    & .img-name {
+        align-items: center;
+        width: fit-content;
+        display: flex;
+        gap: 1rem;
+        & img {
+            height: 6vh;
+        }
+        & .name {
 
-            & .fa-x {
-                font-size: 1.3rem;
+            & h4 {
+                font-weight: 500;
+                color: rgba(0, 0, 0, 0.707);
             }
         }
+    }
+
+    & .price-add-cart {
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+
+        & h3 {
+            font-weight: 400;
+        }
+
+        & h4 {
+            background-color: #003349;
+            padding: .8rem 2rem;
+            border-radius: 30px;
+            font-weight: 500;
+            color: white;
+        }
+    }
+
+
+
+
 }
