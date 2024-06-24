@@ -11,8 +11,10 @@
 :root {
     --bg-color: ;
     --main-color: ;
-    --text-color: white;
-    --second-text-color:rgba(255, 255, 255, 0.53) ;
+    --icon-color: black;
+    --icon-second-color:rgba(0, 0, 0, 0.53);
+    --text-color:black;
+    --second-textcolor:rgba(0, 0, 0, 0.504);
 }
 
 
@@ -23,11 +25,11 @@ header a{
 }
 
 .header {
-    position: absolute;
-    width: 100dvw;
+    position: fixed;
+    width: fit-content;
     z-index: 999;
     left: 0;
-    top: 0;
+    top: 5rem;
 }
 
 .hover-navigation-div{
@@ -40,10 +42,10 @@ header a{
     font-size: 3rem;
     background: transparent;
     padding: 1rem 2rem;
-    color: rgba(255, 255, 255, 0.62);
+    color: rgba(0, 0, 0, 0.62);
 }
 .hover-navigation-div:hover .icon {
-    color: white;
+    color: var(--icon-color);
 }
 /* HOVER ICON */
 .hover-navigation-div:hover .navigation-content{
@@ -54,17 +56,18 @@ header a{
     font-size: 2rem;
     gap: 1.2rem;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .navigation-content .btn{
-    background: rgba(0, 0, 0, 0.3);
-    box-shadow: rgba(255, 255, 255, 0.3) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    background: transparent;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     padding: .5rem 1rem;
     border-radius: 4px;
-    color: var(--second-text-color);
+    color: var(--icon-second-color);
 }
 
 .btn:hover {
-    box-shadow: rgba(255, 255, 255, 1) 0px 2px 4px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 1) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
     color: var(--text-color);
 }

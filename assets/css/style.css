@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --bg-color: ;
+    --main-color: ;
+    --text-color: white;
+    --second-text-color:rgba(255, 255, 255, 0.53) ;
+}
+
+video {
+    position:absolute;
+    z-index: -1;
+    object-fit:cover;
+    width: 100dvw;
+    height: 100dvh;
+    opacity: 85%;
+  }
+
+body {
+    display: flex;
+    background-color: white;
+    width: 100dvw;
+    height: 100dvh;
+    flex-direction: column;
+    align-items: center;
+}
