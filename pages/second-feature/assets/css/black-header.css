@@ -47,7 +47,7 @@ header a{
 .hover-navigation-div:hover .icon {
     color: var(--icon-color);
 }
-/* HOVER ICON */
+
 .hover-navigation-div:hover .navigation-content{
     display: flex;
 }
