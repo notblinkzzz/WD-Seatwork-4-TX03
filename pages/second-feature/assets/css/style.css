@@ -16,7 +16,7 @@
 
 body {
     background-color: black;
-    height: 470dvh;
+    height: 450dvh;
     position: relative;
     z-index: -1;
     overflow-x: hidden
@@ -202,6 +202,7 @@ body {
         height: fit-content;
         display: flex;
         flex-direction: column;
+        position: relative;
 
         & .col-1 {
             width: 100%;
@@ -212,6 +213,7 @@ body {
             }
         }
         & .col-2 {
+            position: absolute;
             display: flex;
             flex-direction: column;
             text-align: center;
@@ -222,22 +224,40 @@ body {
             color: rgb(188, 188, 188);
 
             & h1 {
+                position: absolute;
+                left: 4rem;
+                top: 2rem;
                 font-size: 4rem;
                 color: #44d62c;
+                width: 30%;
+                text-align: start;
             }
             & h4 {
+                position: absolute;
+                background-color: rgba(255, 255, 255, 0.1);
+                box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+                right: 2rem;
+                top: 15rem;
                 font-weight: 500;
-                font-size: 1.6rem;
-                width: 80%;
+                font-size: 1rem;
+                width: 25%;
             }
 
             & .call-to-action {
+                position: absolute;
+                left: 4rem;
+                top: 15rem;
                 padding: 1rem;
                 background-color: green;
                 border-radius: 70px;
                 width: 10%;
                 color: rgb(188, 188, 188);
                 cursor: pointer;
+            }
+            & .call-to-action:hover {
+                transition: .5s;
+                background-color: rgb(0, 143, 0);
+                color: rgb(255, 255, 255);
             }
         }
     }
