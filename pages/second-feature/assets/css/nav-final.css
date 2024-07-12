@@ -1,0 +1,30 @@
+
+
+.primary-nav {
+    display: flex;
+    color: black;
+    position: fixed;
+    width: fit-content;
+    padding: 1rem;
+    background: #2C3E50;
+    border-radius: 10px;
+    left: 1rem;
+    top: 6rem;
+    z-index: 999;
+    
+    & a {
+        display: flex;
+        width: fit-content;
+        gap: 1rem;
+        align-items: center;
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+}
+
+.primary-nav:hover,
+.primary-nav:hover a {
+    background: #566b81;
+    color: rgba(255, 255, 255, 0.712);
+}
